@@ -1,0 +1,45 @@
+{% extends 'base_sample.html' %}
+{% load static %}
+
+{% block title %}Features - BIL{% endblock title %}
+
+{% block hero %}
+<div class="container-fluid bg-deep-blue py-5" style="margin-bottom: 90px;">
+    <div class="row py-5">
+        <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+            <h1 class="display-4 text-white">Features</h1>
+        </div>
+    </div>
+</div>
+{% endblock hero %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row py-5">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+            <h2 class="mb-4">What we offer</h2>
+            <p style="color: var(--soft-gray);">
+                Everything you need to build and grow your startup.
+            </p>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+            <div class="mb-4">
+                <h5 class="mb-2">Mentorship</h5>
+                <p class="small" style="color: var(--soft-gray);">1-on-1 guidance from industry experts</p>
+            </div>
+            <div class="mb-4">
+                <h5 class="mb-2">Workspace</h5>
+                <p class="small" style="color: var(--soft-gray);">Modern co-working facilities</p>
+            </div>
+            <div class="mb-4">
+                <h5 class="mb-2">Network</h5>
+                <p class="small" style="color: var(--soft-gray);">Access to investors and partners</p>
+            </div>
+            <div>
+                <h5 class="mb-2">Resources</h5>
+                <p class="small" style="color: var(--soft-gray);">Tools and funding support</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

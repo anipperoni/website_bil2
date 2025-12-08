@@ -1,0 +1,145 @@
+{% extends 'base_sample.html' %}
+{% load static %}
+
+{% block title %}News & Blog - BIL{% endblock title %}
+
+{% block nav_news %}active{% endblock %}
+
+{% block hero %}
+<div class="page-header">
+    <div class="container text-center">
+        <h1>News & Blog</h1>
+        <p class="mt-3">Latest updates from Brunei's innovation ecosystem</p>
+    </div>
+</div>
+{% endblock hero %}
+
+{% block content %}
+<!-- Featured Article -->
+<div class="container py-5">
+    <div class="row py-5">
+        <div class="col-lg-8 mb-5 mb-lg-0 animate slide-left">
+            <div class="img-overlay" style="height: 400px;">
+                <img src="{% static 'img/carousel-1.jpg' %}" alt="Featured News" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-lg-4 animate slide-right">
+            <span class="text-teal small">FEATURED</span>
+            <h3 class="mt-2 mb-3">Startup673 2024 Winners Announced</h3>
+            <p class="small text-muted mb-3">December 2024</p>
+            <p>
+                Congratulations to all participants and winners of this year's national hackathon.
+                Three innovative teams took home prizes for their solutions in healthcare, sustainability, and education.
+            </p>
+            <a href="#" class="text-teal">Read More &rarr;</a>
+        </div>
+    </div>
+</div>
+
+<!-- Latest News -->
+<div class="section-dark">
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-12 mb-5 animate fade-up">
+                <h2>Latest News</h2>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 animate fade-up delay-1">
+                <div class="card-dark h-100">
+                    <span class="text-teal small">ANNOUNCEMENT</span>
+                    <h5 class="mt-2 mb-3">Applications Open for 2025 Accelerator</h5>
+                    <p class="small text-muted mb-3">November 2024</p>
+                    <p class="small">The next cohort of Innovate Brunei Accelerator is now accepting applications. Apply before January 31st.</p>
+                    <a href="#" class="text-teal small">Read More &rarr;</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 animate fade-up delay-2">
+                <div class="card-dark h-100">
+                    <span class="text-teal small">PRESS RELEASE</span>
+                    <h5 class="mt-2 mb-3">BIL Partners with Regional Tech Hub</h5>
+                    <p class="small text-muted mb-3">October 2024</p>
+                    <p class="small">New partnership expands opportunities for Bruneian startups to access ASEAN markets.</p>
+                    <a href="#" class="text-teal small">Read More &rarr;</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 animate fade-up delay-3">
+                <div class="card-dark h-100">
+                    <span class="text-teal small">SUCCESS STORY</span>
+                    <h5 class="mt-2 mb-3">Alumni Startup Raises $500K</h5>
+                    <p class="small text-muted mb-3">September 2024</p>
+                    <p class="small">Graduate of our 2023 accelerator cohort secures seed funding from regional investors.</p>
+                    <a href="#" class="text-teal small">Read More &rarr;</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 animate fade-up delay-1">
+                <div class="card-dark h-100">
+                    <span class="text-teal small">EVENT RECAP</span>
+                    <h5 class="mt-2 mb-3">Brunei Startup Summit Highlights</h5>
+                    <p class="small text-muted mb-3">August 2024</p>
+                    <p class="small">Over 500 attendees gathered for our annual summit featuring international speakers.</p>
+                    <a href="#" class="text-teal small">Read More &rarr;</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 animate fade-up delay-2">
+                <div class="card-dark h-100">
+                    <span class="text-teal small">WORKSHOP</span>
+                    <h5 class="mt-2 mb-3">AI for Business Workshop Series</h5>
+                    <p class="small text-muted mb-3">July 2024</p>
+                    <p class="small">New workshop series launches to help local businesses leverage artificial intelligence.</p>
+                    <a href="#" class="text-teal small">Read More &rarr;</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 animate fade-up delay-3">
+                <div class="card-dark h-100">
+                    <span class="text-teal small">MILESTONE</span>
+                    <h5 class="mt-2 mb-3">100th Startup Supported</h5>
+                    <p class="small text-muted mb-3">June 2024</p>
+                    <p class="small">BIL celebrates supporting 100 startups since inception, creating over 300 jobs.</p>
+                    <a href="#" class="text-teal small">Read More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Blog Section -->
+<div class="container py-5">
+    <div class="row py-5">
+        <div class="col-12 mb-5 animate fade-up">
+            <h2>From Our Blog</h2>
+            <p>Insights, guides, and stories from the innovation community.</p>
+        </div>
+        <div class="col-lg-6 mb-4 animate fade-up delay-1">
+            <div class="card-dark h-100">
+                <span class="text-gold small">GUIDE</span>
+                <h5 class="mt-2 mb-3">How to Pitch Your Startup: A Complete Guide</h5>
+                <p class="small">Learn the essential elements of a compelling pitch that captures investor attention.</p>
+                <a href="#" class="text-teal small">Read Article &rarr;</a>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4 animate fade-up delay-2">
+            <div class="card-dark h-100">
+                <span class="text-gold small">INSIGHTS</span>
+                <h5 class="mt-2 mb-3">The State of Tech in Brunei: 2024 Report</h5>
+                <p class="small">Our annual analysis of Brunei's technology landscape and emerging opportunities.</p>
+                <a href="#" class="text-teal small">Read Article &rarr;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Newsletter CTA -->
+<div class="section-dark">
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-lg-8 animate fade-up">
+                <h2 class="mb-3">Stay Updated</h2>
+                <p class="mb-4">
+                    Follow us on social media for the latest news, events, and opportunities.
+                </p>
+                <a href="https://www.instagram.com/innovationlab.bn/" target="_blank" class="btn btn-primary me-2">Follow on Instagram</a>
+                <a href="https://innovatebrunei.com" target="_blank" class="btn btn-outline-light">Visit Website</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

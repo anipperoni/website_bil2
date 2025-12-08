@@ -1,0 +1,36 @@
+{% extends 'base_sample.html' %}
+{% load static %}
+
+{% block title %}Stories - BIL{% endblock title %}
+
+{% block hero %}
+<div class="container-fluid bg-deep-blue py-5" style="margin-bottom: 90px;">
+    <div class="row py-5">
+        <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+            <h1 class="display-4 text-white">Stories</h1>
+        </div>
+    </div>
+</div>
+{% endblock hero %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row py-5">
+        <div class="col-lg-6">
+            <h2 class="mb-4">Success stories</h2>
+            <p style="color: var(--soft-gray);">
+                Founders who started their journey with BIL.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row py-5 border-top">
+        <div class="col-lg-8">
+            <h2 class="mb-4">Start your story</h2>
+            <a href="{% url 'quote' %}" class="btn btn-primary py-3 px-5">Apply Now</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

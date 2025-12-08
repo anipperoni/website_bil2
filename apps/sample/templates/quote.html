@@ -1,0 +1,48 @@
+{% extends 'base_sample.html' %}
+{% load static %}
+
+{% block title %}Apply - BIL{% endblock title %}
+
+{% block hero %}
+<div class="page-header">
+    <div class="container text-center">
+        <h1>Join us</h1>
+    </div>
+</div>
+{% endblock hero %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row py-5">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+            <h2 class="mb-4">Apply to the accelerator</h2>
+            <p>
+                Got an idea you're excited about? Tell us.
+                We're looking for people who want to build something,
+                not people with perfect pitch decks.
+            </p>
+        </div>
+        <div class="col-lg-6 offset-lg-1">
+            <form>
+                <div class="row g-4">
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Your name">
+                    </div>
+                    <div class="col-12">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="What are you building?">
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control" rows="4" placeholder="Tell us more (keep it casual)"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

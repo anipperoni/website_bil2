@@ -1,0 +1,85 @@
+{% extends 'base_sample.html' %}
+{% load static %}
+
+{% block title %}Programs - BIL{% endblock title %}
+
+{% block nav_service %}active{% endblock %}
+
+{% block hero %}
+<div class="page-header">
+    <div class="container text-center">
+        <h1>Programs</h1>
+    </div>
+</div>
+{% endblock hero %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row py-5 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+            <h2 class="mb-4">Accelerator</h2>
+            <p class="mb-4">
+                12 weeks of real talk about building a startup.
+                Mentors who've done it before, workshops that actually help,
+                and a chance to pitch to people who might invest.
+            </p>
+            <p class="mb-4">
+                It's intense, but you'll come out the other side with something real.
+            </p>
+            <a href="{% url 'quote' %}" class="btn btn-primary">Apply now</a>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+            <div class="img-overlay" style="height: 300px;">
+                <img src="{% static 'img/feature.jpg' %}" alt="Workshop at BIL" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-dark">
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-lg-6">
+                <h2 class="mb-4">Startup673 Hackathon</h2>
+                <p>
+                    Our national hackathon bringing together innovators to build
+                    solutions for real-world challenges in 48 hours.
+                    Find a team, pick a problem, and build something real.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row py-5 align-items-center">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+            <div class="img-overlay" style="height: 280px;">
+                <img src="{% static 'img/carousel-2.jpg' %}" alt="One-on-one mentoring" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1">
+            <h2 class="mb-4">Workshops</h2>
+            <p>
+                Free sessions on useful stuff. How to code, how to pitch,
+                how to not give up when things get hard. Come learn,
+                meet people, ask dumb questions (there aren't any).
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="section-dark">
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-lg-8">
+                <h2 class="mb-3">Not sure which one's for you?</h2>
+                <p class="mb-4">
+                    Reach out and we'll help you find the right program.
+                </p>
+                <a href="{% url 'contact' %}" class="btn btn-primary">Let's chat</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,146 @@
+{% extends 'base_sample.html' %}
+{% load static %}
+
+{% block title %}Programs & Initiatives - BIL{% endblock title %}
+
+{% block nav_programs %}active{% endblock %}
+
+{% block hero %}
+<div class="page-header">
+    <div class="container text-center">
+        <h1>Programs & Initiatives</h1>
+        <p class="mt-3">Empowering innovators at every stage of their journey</p>
+    </div>
+</div>
+{% endblock hero %}
+
+{% block content %}
+<!-- Innovate Brunei Accelerator -->
+<div class="container py-5">
+    <div class="row py-5 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0 animate slide-left">
+            <span class="text-teal small mb-2 d-block">FLAGSHIP PROGRAM</span>
+            <h2 class="mb-4">Innovate Brunei Accelerator</h2>
+            <p class="mb-4">
+                Our 12-week intensive accelerator program designed to transform promising
+                startups into investment-ready ventures. Get mentorship from industry experts,
+                access to funding opportunities, and a supportive community.
+            </p>
+            <ul class="mb-4" style="color: var(--gray);">
+                <li>One-on-one mentorship sessions</li>
+                <li>Workshops on business development</li>
+                <li>Demo Day pitch to investors</li>
+                <li>Up to $50,000 in funding opportunities</li>
+            </ul>
+            <a href="{% url 'quote' %}" class="btn btn-primary">Apply Now</a>
+        </div>
+        <div class="col-lg-5 offset-lg-1 animate slide-right">
+            <div class="img-overlay" style="height: 350px;">
+                <img src="{% static 'img/feature.jpg' %}" alt="Accelerator Program" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Startup673 -->
+<div class="section-dark">
+    <div class="container py-5">
+        <div class="row py-5 align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0 animate slide-left">
+                <div class="img-overlay" style="height: 300px;">
+                    <img src="{% static 'img/carousel-1.jpg' %}" alt="Startup673 Hackathon" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 animate slide-right">
+                <span class="text-teal small mb-2 d-block">ANNUAL EVENT</span>
+                <h2 class="mb-4">Startup673 Hackathon</h2>
+                <p class="mb-4">
+                    Brunei's premier national hackathon bringing together innovators,
+                    developers, and entrepreneurs to solve real-world challenges in 48 hours.
+                </p>
+                <ul class="mb-4" style="color: var(--gray);">
+                    <li>48-hour innovation sprint</li>
+                    <li>Cash prizes and incubation opportunities</li>
+                    <li>Industry mentors and judges</li>
+                    <li>Networking with tech community</li>
+                </ul>
+                <a href="{% url 'startup673' %}" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Capability Accelerator -->
+<div class="container py-5">
+    <div class="row py-5 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0 animate slide-left">
+            <span class="text-teal small mb-2 d-block">SKILLS DEVELOPMENT</span>
+            <h2 class="mb-4">Capability Accelerator</h2>
+            <p class="mb-4">
+                Targeted training programs addressing competency gaps in emerging technologies.
+                Build practical skills in AI, blockchain, IoT, and more.
+            </p>
+            <ul class="mb-4" style="color: var(--gray);">
+                <li>Tech bootcamps and workshops</li>
+                <li>Industry certifications</li>
+                <li>Hands-on project experience</li>
+                <li>Career placement support</li>
+            </ul>
+            <a href="{% url 'events' %}" class="btn btn-outline-light">View Upcoming Workshops</a>
+        </div>
+        <div class="col-lg-5 offset-lg-1 animate slide-right">
+            <div class="img-overlay" style="height: 300px;">
+                <img src="{% static 'img/carousel-2.jpg' %}" alt="Training Workshop" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Innovation Showcase -->
+<div class="section-dark">
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-12 mb-5 animate fade-up">
+                <span class="text-teal small mb-2 d-block">EXHIBITION</span>
+                <h2 class="mb-4">Innovation Showcase</h2>
+                <p class="col-lg-8 px-0">
+                    A platform to demonstrate cutting-edge technologies and solutions
+                    developed in Brunei and beyond. Connect with potential partners,
+                    investors, and customers.
+                </p>
+            </div>
+            <div class="col-md-4 mb-4 animate fade-up delay-1">
+                <div class="card-dark h-100">
+                    <h4 class="text-teal mb-3">For Startups</h4>
+                    <p class="small">Showcase your products to potential investors and customers.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 animate fade-up delay-2">
+                <div class="card-dark h-100">
+                    <h4 class="text-teal mb-3">For Corporates</h4>
+                    <p class="small">Discover innovative solutions and partnership opportunities.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 animate fade-up delay-3">
+                <div class="card-dark h-100">
+                    <h4 class="text-teal mb-3">For Researchers</h4>
+                    <p class="small">Present your research and find commercialization pathways.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA -->
+<div class="container py-5">
+    <div class="row py-5">
+        <div class="col-lg-8 animate fade-up">
+            <h2 class="mb-3">Not sure which program is right for you?</h2>
+            <p class="mb-4">
+                Our team can help you find the perfect fit for your stage and goals.
+            </p>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Get in Touch</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

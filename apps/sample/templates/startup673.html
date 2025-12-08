@@ -1,0 +1,246 @@
+{% extends 'base_sample.html' %}
+{% load static %}
+
+{% block title %}Startup673 - BIL{% endblock title %}
+
+{% block nav_startup673 %}active{% endblock %}
+
+{% block hero %}
+<section class="hero-section" style="background: linear-gradient(rgba(22, 22, 22, 0.8), rgba(22, 22, 22, 0.9)), url('{% static 'img/carousel-1.jpg' %}') center/cover no-repeat;">
+    <div class="container">
+        <div class="row min-vh-100 align-items-center">
+            <div class="col-lg-8">
+                <span class="text-teal mb-3 d-block">BRUNEI'S NATIONAL HACKATHON</span>
+                <h1 class="hero-title">
+                    Startup<span class="highlight">673</span>
+                </h1>
+                <p class="hero-subtitle">
+                    48 hours to build something amazing. Join hundreds of innovators, developers,
+                    and entrepreneurs in Brunei's premier hackathon.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="{% url 'quote' %}" class="btn btn-primary">Register Now</a>
+                    <a href="#about" class="btn btn-outline-light">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock hero %}
+
+{% block content %}
+<!-- About Startup673 -->
+<div class="container py-5" id="about">
+    <div class="row py-5 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0 animate slide-left">
+            <span class="text-teal small mb-2 d-block">ABOUT THE EVENT</span>
+            <h2 class="mb-4">What is Startup673?</h2>
+            <p class="mb-4">
+                Startup673 is Brunei's flagship national hackathon, bringing together innovators from
+                all backgrounds to solve real-world challenges in just 48 hours. Named after Brunei's
+                country code (+673), it represents our commitment to homegrown innovation.
+            </p>
+            <p>
+                Whether you're a developer, designer, business mind, or just have a great idea,
+                Startup673 is your launchpad to turn concepts into reality.
+            </p>
+        </div>
+        <div class="col-lg-5 offset-lg-1 animate slide-right">
+            <div class="row">
+                <div class="col-6 mb-4">
+                    <div class="stat-number">48</div>
+                    <div class="stat-label">Hours</div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Participants</div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="stat-number">$10K+</div>
+                    <div class="stat-label">In Prizes</div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Mentors</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Challenge Tracks -->
+<div class="section-dark">
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-12 mb-5 animate fade-up">
+                <h2>2025 Challenge Tracks</h2>
+                <p>Choose a track that matches your passion and skills.</p>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-1">
+                <div class="card-dark h-100 text-center">
+                    <div class="text-teal mb-3" style="font-size: 2.5rem;">&#128151;</div>
+                    <h5>HealthTech</h5>
+                    <p class="small">Solutions for healthcare accessibility, wellness, and medical innovation.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-2">
+                <div class="card-dark h-100 text-center">
+                    <div class="text-teal mb-3" style="font-size: 2.5rem;">&#127793;</div>
+                    <h5>Sustainability</h5>
+                    <p class="small">Green tech, climate solutions, and environmental sustainability.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-3">
+                <div class="card-dark h-100 text-center">
+                    <div class="text-teal mb-3" style="font-size: 2.5rem;">&#128218;</div>
+                    <h5>EdTech</h5>
+                    <p class="small">Innovative approaches to education and skills development.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-4">
+                <div class="card-dark h-100 text-center">
+                    <div class="text-teal mb-3" style="font-size: 2.5rem;">&#128736;</div>
+                    <h5>Open Innovation</h5>
+                    <p class="small">Any problem, any solution. Surprise us with your creativity.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Timeline -->
+<div class="container py-5">
+    <div class="row py-5">
+        <div class="col-12 mb-5 animate fade-up">
+            <h2>Event Timeline</h2>
+        </div>
+        <div class="col-lg-8">
+            <div class="row">
+                <div class="col-12 mb-4 animate fade-up delay-1">
+                    <div class="d-flex">
+                        <div class="text-teal me-4" style="min-width: 100px; font-weight: 600;">FRI 6PM</div>
+                        <div>
+                            <h5 class="mb-1">Opening Ceremony</h5>
+                            <p class="small mb-0">Challenge reveal, team formation, and kickoff</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-4 animate fade-up delay-2">
+                    <div class="d-flex">
+                        <div class="text-teal me-4" style="min-width: 100px; font-weight: 600;">SAT</div>
+                        <div>
+                            <h5 class="mb-1">Hacking Day</h5>
+                            <p class="small mb-0">Build, iterate, get mentor feedback</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-4 animate fade-up delay-3">
+                    <div class="d-flex">
+                        <div class="text-teal me-4" style="min-width: 100px; font-weight: 600;">SUN 12PM</div>
+                        <div>
+                            <h5 class="mb-1">Submissions Due</h5>
+                            <p class="small mb-0">Final project submissions and demos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-4 animate fade-up delay-4">
+                    <div class="d-flex">
+                        <div class="text-teal me-4" style="min-width: 100px; font-weight: 600;">SUN 4PM</div>
+                        <div>
+                            <h5 class="mb-1">Finals & Awards</h5>
+                            <p class="small mb-0">Top teams pitch, winners announced</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Prizes -->
+<div class="section-dark">
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-12 mb-5 animate fade-up">
+                <h2>Prizes & Rewards</h2>
+            </div>
+            <div class="col-md-4 mb-4 animate fade-up delay-1">
+                <div class="card-dark text-center h-100">
+                    <div class="text-gold mb-2" style="font-size: 3rem;">&#127942;</div>
+                    <h4 class="text-gold">1st Place</h4>
+                    <div class="stat-number mb-2">$5,000</div>
+                    <p class="small">+ Incubation opportunity at BIL</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 animate fade-up delay-2">
+                <div class="card-dark text-center h-100">
+                    <div class="text-gray mb-2" style="font-size: 3rem;">&#129352;</div>
+                    <h4>2nd Place</h4>
+                    <div class="stat-number mb-2">$3,000</div>
+                    <p class="small">+ Mentorship package</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 animate fade-up delay-3">
+                <div class="card-dark text-center h-100">
+                    <div class="text-gold mb-2" style="font-size: 3rem; opacity: 0.7;">&#129353;</div>
+                    <h4>3rd Place</h4>
+                    <div class="stat-number mb-2">$2,000</div>
+                    <p class="small">+ Workshop credits</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Past Winners -->
+<div class="container py-5">
+    <div class="row py-5">
+        <div class="col-12 mb-5 animate fade-up">
+            <h2>Past Winners</h2>
+            <p>Success stories from previous Startup673 hackathons.</p>
+        </div>
+        <div class="col-md-4 mb-4 animate fade-up delay-1">
+            <div class="card-dark h-100">
+                <span class="text-teal small">2024 WINNER</span>
+                <h5 class="mt-2 mb-2">MedConnect</h5>
+                <p class="small">Telemedicine platform connecting rural communities with healthcare providers.</p>
+                <p class="small text-muted mb-0">Now serving 5,000+ patients</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 animate fade-up delay-2">
+            <div class="card-dark h-100">
+                <span class="text-teal small">2023 WINNER</span>
+                <h5 class="mt-2 mb-2">GreenBin</h5>
+                <p class="small">Smart waste management system using IoT sensors and route optimization.</p>
+                <p class="small text-muted mb-0">Raised $200K seed funding</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 animate fade-up delay-3">
+            <div class="card-dark h-100">
+                <span class="text-teal small">2022 WINNER</span>
+                <h5 class="mt-2 mb-2">EduPlay</h5>
+                <p class="small">Gamified learning platform for K-12 students in Brunei curriculum.</p>
+                <p class="small text-muted mb-0">10,000+ active users</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA -->
+<div class="section-dark">
+    <div class="container py-5">
+        <div class="row py-5 align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0 animate fade-up">
+                <h2 class="mb-3">Ready to Build Something Amazing?</h2>
+                <p class="mb-4">
+                    Join Startup673 2025 and be part of Brunei's innovation journey.
+                    No team? No problem - we'll help you find one!
+                </p>
+            </div>
+            <div class="col-lg-4 text-lg-end animate fade-up">
+                <a href="{% url 'quote' %}" class="btn btn-primary btn-lg">Register Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

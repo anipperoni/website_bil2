@@ -1,0 +1,34 @@
+{% load static %}
+
+<!--Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="{% static 'vendor/fonts/boxicons.css' %}" />
+
+<!--Core CSS -->
+{% if rtl_support %}
+<link rel="stylesheet" href="{% static 'vendor/css/rtl/core.css' %}" class="{{ has_customizer|yesno:'template-customizer-core-css,' }}" />
+<link rel="stylesheet" href="{% static 'vendor/css/rtl/theme-default.css' %}" class="{{ has_customizer|yesno:'template-customizer-theme-css,' }}" />
+{% else %}
+<link rel="stylesheet" href="{% static 'vendor/css/core.css' %}" class="{{ has_customizer|yesno:'template-customizer-core-css,' }}" />
+<link rel="stylesheet" href="{% static 'vendor/css/theme-default.css' %}" class="{{ has_customizer|yesno:'template-customizer-theme-css,' }}" />
+{% endif %}
+
+<link rel="stylesheet" href="{% static 'css/demo.css' %}" />
+<link rel="stylesheet" href="{% static 'vendor/css/pages/front-page.css' %}" />
+
+<!-- Bootstrap CSS from assets -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+
+<!-- Library CSS from assets -->
+<link rel="stylesheet" href="{% static 'lib/animate/animate.min.css' %}" />
+<link rel="stylesheet" href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" />
+<link rel="stylesheet" href="{% static 'lib/owlcarousel/assets/owl.theme.default.min.css' %}" />
+
+<!-- Custom stylesheet from assets -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+<!--Vendor CSS-->
