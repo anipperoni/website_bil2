@@ -1,15 +1,15 @@
 {% extends 'base_sample.html' %}
 {% load static %}
 
-{% block title %}Events & Workshops - BIL{% endblock title %}
+{% block title %}Events - BIL{% endblock title %}
 
 {% block nav_events %}active{% endblock %}
 
 {% block hero %}
 <div class="page-header">
     <div class="container text-center">
-        <h1>Events & Workshops</h1>
-        <p class="mt-3">Learn, connect, and grow with our community</p>
+        <h1>Events</h1>
+        <p class="mt-3">Come learn something new</p>
     </div>
 </div>
 {% endblock hero %}
@@ -19,7 +19,7 @@
 <div class="container py-5">
     <div class="row py-5">
         <div class="col-12 mb-5 animate fade-up">
-            <h2>Upcoming Events</h2>
+            <h2>Coming up</h2>
         </div>
 
         <!-- Event 1 -->
@@ -32,9 +32,9 @@
                     </div>
                     <div class="col-md-7 mb-3 mb-md-0">
                         <span class="text-teal small">WORKSHOP</span>
-                        <h4 class="mt-1 mb-2">Introduction to AI for Business</h4>
-                        <p class="small mb-0">Learn how to leverage AI tools to improve your business operations. No coding experience required.</p>
-                        <p class="small text-muted mt-2 mb-0">2:00 PM - 5:00 PM | BIL @ kHUB</p>
+                        <h4 class="mt-1 mb-2">AI for Business</h4>
+                        <p class="small mb-0">Learn how to use AI tools to work smarter. No coding needed.</p>
+                        <p class="small text-muted mt-2 mb-0">2:00 PM - 5:00 PM @ kHUB</p>
                     </div>
                     <div class="col-md-3 text-md-end">
                         <a href="#" class="btn btn-primary">Register</a>
@@ -53,9 +53,9 @@
                     </div>
                     <div class="col-md-7 mb-3 mb-md-0">
                         <span class="text-teal small">NETWORKING</span>
-                        <h4 class="mt-1 mb-2">Startup Mixer: New Year Edition</h4>
-                        <p class="small mb-0">Casual networking event for entrepreneurs, investors, and tech enthusiasts.</p>
-                        <p class="small text-muted mt-2 mb-0">6:00 PM - 9:00 PM | BIL @ kHUB</p>
+                        <h4 class="mt-1 mb-2">Startup Mixer</h4>
+                        <p class="small mb-0">Casual hangout for founders, builders, and anyone interested in startups.</p>
+                        <p class="small text-muted mt-2 mb-0">6:00 PM - 9:00 PM @ kHUB</p>
                     </div>
                     <div class="col-md-3 text-md-end">
                         <a href="#" class="btn btn-primary">Register</a>
@@ -74,9 +74,9 @@
                     </div>
                     <div class="col-md-7 mb-3 mb-md-0">
                         <span class="text-teal small">BOOTCAMP</span>
-                        <h4 class="mt-1 mb-2">Web Development Bootcamp (3-Day)</h4>
-                        <p class="small mb-0">Intensive 3-day bootcamp covering HTML, CSS, JavaScript, and modern frameworks.</p>
-                        <p class="small text-muted mt-2 mb-0">9:00 AM - 5:00 PM | BIL @ kHUB</p>
+                        <h4 class="mt-1 mb-2">Web Dev Bootcamp (3 Days)</h4>
+                        <p class="small mb-0">Intensive 3-day course. HTML, CSS, JavaScript, and modern frameworks.</p>
+                        <p class="small text-muted mt-2 mb-0">9:00 AM - 5:00 PM @ kHUB</p>
                     </div>
                     <div class="col-md-3 text-md-end">
                         <a href="#" class="btn btn-primary">Register</a>
@@ -94,13 +94,13 @@
                         <div class="text-muted small">MAR 2025</div>
                     </div>
                     <div class="col-md-7 mb-3 mb-md-0">
-                        <span class="text-gold small">FLAGSHIP EVENT</span>
+                        <span class="text-gold small">BIG ONE</span>
                         <h4 class="mt-1 mb-2">Startup673 Hackathon 2025</h4>
-                        <p class="small mb-0">48-hour national hackathon. Build solutions, win prizes, launch your startup journey.</p>
-                        <p class="small text-muted mt-2 mb-0">48 Hours | BIL @ kHUB</p>
+                        <p class="small mb-0">48 hours. Build something. Win prizes. Maybe start a company.</p>
+                        <p class="small text-muted mt-2 mb-0">All weekend @ kHUB</p>
                     </div>
                     <div class="col-md-3 text-md-end">
-                        <a href="{% url 'startup673' %}" class="btn btn-gold">Learn More</a>
+                        <a href="{% url 'startup673' %}" class="btn btn-gold">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -108,40 +108,40 @@
     </div>
 </div>
 
-<!-- Workshop Categories -->
+<!-- What We Cover -->
 <div class="section-dark">
     <div class="container py-5">
         <div class="row py-5">
             <div class="col-12 mb-5 animate fade-up">
-                <h2>Workshop Categories</h2>
-                <p>We offer regular workshops across various topics to build your skills.</p>
+                <h2>Topics we cover</h2>
+                <p>Our workshops and events span a bunch of areas.</p>
             </div>
             <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-1">
                 <div class="card-dark text-center h-100">
                     <div class="text-teal mb-3" style="font-size: 2rem;">&#60;/&#62;</div>
-                    <h5>Tech Skills</h5>
-                    <p class="small">Coding, web development, mobile apps, cloud computing</p>
+                    <h5>Coding</h5>
+                    <p class="small">Web, mobile, cloud - the practical stuff</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-2">
                 <div class="card-dark text-center h-100">
                     <div class="text-teal mb-3" style="font-size: 2rem;">&#128200;</div>
                     <h5>Business</h5>
-                    <p class="small">Pitching, fundraising, marketing, financial planning</p>
+                    <p class="small">Pitching, fundraising, marketing</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-3">
                 <div class="card-dark text-center h-100">
                     <div class="text-teal mb-3" style="font-size: 2rem;">&#129302;</div>
-                    <h5>AI & Data</h5>
-                    <p class="small">Machine learning, data analytics, AI applications</p>
+                    <h5>AI</h5>
+                    <p class="small">How to use AI in your work</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-4">
                 <div class="card-dark text-center h-100">
                     <div class="text-teal mb-3" style="font-size: 2rem;">&#127793;</div>
-                    <h5>Sustainability</h5>
-                    <p class="small">Green tech, ESG, circular economy, cleantech</p>
+                    <h5>Green Tech</h5>
+                    <p class="small">Sustainability and cleantech</p>
                 </div>
             </div>
         </div>
@@ -152,27 +152,27 @@
 <div class="container py-5">
     <div class="row py-5">
         <div class="col-12 mb-5 animate fade-up">
-            <h2>Past Events</h2>
+            <h2>What we've done</h2>
         </div>
         <div class="col-md-4 mb-4 animate fade-up delay-1">
             <div class="card-dark h-100">
                 <span class="text-muted small">DEC 2024</span>
-                <h5 class="mt-2">Year-End Demo Day</h5>
-                <p class="small">10 startups presented to investors and partners.</p>
+                <h5 class="mt-2">Demo Day</h5>
+                <p class="small">10 startups pitched to investors. Some good deals happened.</p>
             </div>
         </div>
         <div class="col-md-4 mb-4 animate fade-up delay-2">
             <div class="card-dark h-100">
                 <span class="text-muted small">NOV 2024</span>
-                <h5 class="mt-2">Blockchain Basics Workshop</h5>
-                <p class="small">Introduction to blockchain technology and use cases.</p>
+                <h5 class="mt-2">Blockchain Workshop</h5>
+                <p class="small">Intro to blockchain - what it is and why you might care.</p>
             </div>
         </div>
         <div class="col-md-4 mb-4 animate fade-up delay-3">
             <div class="card-dark h-100">
                 <span class="text-muted small">OCT 2024</span>
                 <h5 class="mt-2">Startup673 2024</h5>
-                <p class="small">150+ participants, 30 teams, 3 winners.</p>
+                <p class="small">150 people, 30 teams, 3 winners. Good times.</p>
             </div>
         </div>
     </div>
@@ -183,11 +183,11 @@
     <div class="container py-5">
         <div class="row py-5">
             <div class="col-lg-8 animate fade-up">
-                <h2 class="mb-3">Want to host an event with us?</h2>
+                <h2 class="mb-3">Want to host something?</h2>
                 <p class="mb-4">
-                    We welcome collaboration on workshops, meetups, and community events.
+                    Got an idea for a workshop or event? We're open to collaborations.
                 </p>
-                <a href="{% url 'contact' %}" class="btn btn-primary">Get in Touch</a>
+                <a href="{% url 'contact' %}" class="btn btn-primary">Let's talk</a>
             </div>
         </div>
     </div>

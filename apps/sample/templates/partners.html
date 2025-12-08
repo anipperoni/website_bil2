@@ -1,15 +1,15 @@
 {% extends 'base_sample.html' %}
 {% load static %}
 
-{% block title %}Partners & Directory - BIL{% endblock title %}
+{% block title %}Partners - BIL{% endblock title %}
 
 {% block nav_partners %}active{% endblock %}
 
 {% block hero %}
 <div class="page-header">
     <div class="container text-center">
-        <h1>Partners & Directory</h1>
-        <p class="mt-3">Building Brunei's innovation ecosystem together</p>
+        <h1>Our Partners</h1>
+        <p class="mt-3">The people who make this happen</p>
     </div>
 </div>
 {% endblock hero %}
@@ -19,120 +19,73 @@
 <div class="container py-5">
     <div class="row py-5">
         <div class="col-12 mb-5 animate fade-up">
-            <span class="text-teal small mb-2 d-block">FOUNDING PARTNERS</span>
-            <h2>Established By</h2>
-            <p>The four organizations that came together to create Brunei Innovation Lab.</p>
+            <h2>The founding four</h2>
+            <p>These organizations came together in 2013 to create BIL.</p>
         </div>
         <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-1">
             <div class="card-dark text-center h-100 p-4">
                 <img src="{% static 'img/shell.png' %}" alt="BSP" class="partner-logo mb-3" style="height: 60px;">
-                <h5>Brunei Shell Petroleum</h5>
-                <p class="small">Energy sector leader driving innovation and sustainability in Brunei.</p>
+                <h5>BSP</h5>
+                <p class="small">Brunei Shell Petroleum</p>
             </div>
         </div>
         <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-2">
             <div class="card-dark text-center h-100 p-4">
                 <img src="{% static 'img/dare.png' %}" alt="DARe" class="partner-logo mb-3" style="height: 60px;">
-                <h5>Darussalam Enterprise</h5>
-                <p class="small">Government agency fostering entrepreneurship and business development.</p>
+                <h5>DARe</h5>
+                <p class="small">Darussalam Enterprise</p>
             </div>
         </div>
         <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-3">
             <div class="card-dark text-center h-100 p-4">
                 <img src="{% static 'img/DST.png' %}" alt="DST" class="partner-logo mb-3" style="height: 60px;">
-                <h5>Datastream Digital</h5>
-                <p class="small">Leading telecommunications provider enabling digital connectivity.</p>
+                <h5>DST</h5>
+                <p class="small">Datastream Digital</p>
             </div>
         </div>
         <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-4">
             <div class="card-dark text-center h-100 p-4">
                 <img src="{% static 'img/livewire.png' %}" alt="LiveWIRE" class="partner-logo mb-3" style="height: 60px;">
                 <h5>Shell LiveWIRE</h5>
-                <p class="small">Global enterprise development program supporting young entrepreneurs.</p>
+                <p class="small">Youth entrepreneurship program</p>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Corporate Partners -->
+<!-- Who We Work With -->
 <div class="section-dark">
     <div class="container py-5">
         <div class="row py-5">
             <div class="col-12 mb-5 animate fade-up">
-                <span class="text-teal small mb-2 d-block">CORPORATE PARTNERS</span>
-                <h2>Industry Collaborators</h2>
-                <p>Companies working with BIL to drive innovation across sectors.</p>
+                <h2>Who we work with</h2>
+                <p>We collaborate with all kinds of organizations.</p>
             </div>
             <div class="col-md-4 mb-4 animate fade-up delay-1">
                 <div class="card-dark h-100">
-                    <h5 class="text-teal">Technology</h5>
-                    <p class="small mb-0">Partners providing tech infrastructure, cloud services, and digital solutions.</p>
+                    <h5 class="text-teal">Companies</h5>
+                    <p class="small mb-0">
+                        From telcos to banks to oil & gas - businesses that want to
+                        support local innovation and find new solutions.
+                    </p>
                 </div>
             </div>
             <div class="col-md-4 mb-4 animate fade-up delay-2">
                 <div class="card-dark h-100">
-                    <h5 class="text-teal">Finance</h5>
-                    <p class="small mb-0">Banks and financial institutions supporting startup funding and fintech.</p>
+                    <h5 class="text-teal">Government</h5>
+                    <p class="small mb-0">
+                        Various ministries and agencies that share our goal
+                        of building a more innovative Brunei.
+                    </p>
                 </div>
             </div>
             <div class="col-md-4 mb-4 animate fade-up delay-3">
                 <div class="card-dark h-100">
-                    <h5 class="text-teal">Energy & Resources</h5>
-                    <p class="small mb-0">Oil & gas companies driving sustainability and cleantech innovation.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Government Partners -->
-<div class="container py-5">
-    <div class="row py-5">
-        <div class="col-12 mb-5 animate fade-up">
-            <span class="text-teal small mb-2 d-block">GOVERNMENT PARTNERS</span>
-            <h2>Public Sector Support</h2>
-            <p>Government ministries and agencies aligned with our innovation mission.</p>
-        </div>
-        <div class="col-md-6 mb-4 animate fade-up delay-1">
-            <div class="card-dark h-100">
-                <h5>Ministry of Finance and Economy</h5>
-                <p class="small mb-0">Supporting economic diversification through innovation and entrepreneurship initiatives.</p>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4 animate fade-up delay-2">
-            <div class="card-dark h-100">
-                <h5>Ministry of Transport and Infocommunications</h5>
-                <p class="small mb-0">Driving digital transformation and smart nation initiatives.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Academic Partners -->
-<div class="section-dark">
-    <div class="container py-5">
-        <div class="row py-5">
-            <div class="col-12 mb-5 animate fade-up">
-                <span class="text-teal small mb-2 d-block">ACADEMIC PARTNERS</span>
-                <h2>Research & Education</h2>
-                <p>Universities and institutions collaborating on research and talent development.</p>
-            </div>
-            <div class="col-md-4 mb-4 animate fade-up delay-1">
-                <div class="card-dark h-100">
-                    <h5>Universiti Brunei Darussalam</h5>
-                    <p class="small mb-0">National university contributing research and graduate talent.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4 animate fade-up delay-2">
-                <div class="card-dark h-100">
-                    <h5>UTB</h5>
-                    <p class="small mb-0">Technical university focused on engineering and applied sciences.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4 animate fade-up delay-3">
-                <div class="card-dark h-100">
-                    <h5>Politeknik Brunei</h5>
-                    <p class="small mb-0">Polytechnic providing vocational and technical education.</p>
+                    <h5 class="text-teal">Universities</h5>
+                    <p class="small mb-0">
+                        UBD, UTB, Politeknik - we work with students and
+                        researchers who want to turn ideas into reality.
+                    </p>
                 </div>
             </div>
         </div>
@@ -143,12 +96,12 @@
 <div class="container py-5">
     <div class="row py-5">
         <div class="col-lg-8 animate fade-up">
-            <h2 class="mb-3">Become a Partner</h2>
+            <h2 class="mb-3">Want to partner with us?</h2>
             <p class="mb-4">
-                Join our ecosystem and help shape Brunei's innovation future.
-                We welcome partnerships across corporate, government, and academic sectors.
+                We're always open to new collaborations. If you want to support
+                innovation in Brunei, let's talk.
             </p>
-            <a href="{% url 'contact' %}" class="btn btn-primary">Partner With Us</a>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Get in touch</a>
         </div>
     </div>
 </div>
