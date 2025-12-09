@@ -3,6 +3,8 @@
 
 {% block title %}About - BIL{% endblock title %}
 
+{% block meta_description %}About Brunei Innovation Lab - Helping Bruneian startups grow since 2013. Founded by BSP, DARe, DST, and LiveWIRE.{% endblock %}
+
 {% block nav_about %}active{% endblock %}
 
 {% block hero %}
@@ -32,7 +34,7 @@
         </div>
         <div class="col-lg-5 offset-lg-1 animate slide-right">
             <div class="img-overlay" style="height: 350px;">
-                <img src="{% static 'img/about.jpg' %}" alt="BIL Team" class="img-fluid">
+                <img src="{% static 'img/about.jpg' %}" alt="BIL Team" class="img-fluid" loading="lazy">
             </div>
         </div>
     </div>
@@ -149,10 +151,10 @@
             <p>The folks who made this possible.</p>
         </div>
         <div class="col-6 col-md-3 mb-4 animate fade-up delay-1">
-            <img src="{% static 'img/shell.png' %}" alt="BSP" class="partner-logo">
+            <img src="{% static 'img/shell.png' %}" alt="BSP" class="partner-logo" loading="lazy">
         </div>
         <div class="col-6 col-md-3 mb-4 animate fade-up delay-2">
-            <img src="{% static 'img/dare.png' %}" alt="DARe" class="partner-logo">
+            <img src="{% static 'img/dare.png' %}" alt="DARe" class="partner-logo" loading="lazy">
         </div>
         <div class="col-6 col-md-3 mb-4 animate fade-up delay-3">
             <img src="{% static 'img/DST.png' %}" alt="DST" class="partner-logo">

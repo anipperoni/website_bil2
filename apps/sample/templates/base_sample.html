@@ -6,7 +6,18 @@
     <meta charset="utf-8">
     <title>{% block title %}BIL{% endblock title %}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Brunei Innovation Lab - Where ideas become reality" name="description">
+    <meta name="description" content="{% block meta_description %}Brunei Innovation Lab - Where startups are born. Join our accelerator, hackathons, and workshops.{% endblock %}">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Brunei Innovation Lab">
+    <meta property="og:title" content="{% block og_title %}Brunei Innovation Lab{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}Where Brunei builds the future{% endblock %}">
+    <meta property="og:image" content="{% static 'img/logo.png' %}">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="{% static 'img/logo.png' %}" as="image">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,6 +64,11 @@
     {% block content %}
     {% endblock content %}
 
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/6738651345" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
     <!-- Footer -->
     <footer class="py-5">
         <div class="container">
@@ -61,7 +77,7 @@
                     <h4 class="mb-3">BIL</h4>
                     <p class="small mb-3">
                         Brunei Innovation Lab<br>
-                        Driving Brunei's innovation ecosystem.
+                        Where Brunei builds the future.
                     </p>
                     <div class="d-flex gap-3">
                         <a href="https://www.instagram.com/innovationlab.bn/" target="_blank" class="small">Instagram</a>
@@ -88,8 +104,8 @@
                 <div class="col-lg-4">
                     <h6 class="mb-3">Get in touch</h6>
                     <p class="small mb-2">
-                        enquire@innovatebrunei.com<br>
-                        +673 865 1345
+                        <a href="mailto:enquire@innovatebrunei.com">enquire@innovatebrunei.com</a><br>
+                        <a href="tel:+6738651345">+673 865 1345</a>
                     </p>
                     <p class="small mb-0">
                         Knowledge Hub (kHUB)<br>
@@ -99,7 +115,7 @@
             </div>
             <div class="row pt-4 mt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
                 <div class="col-12">
-                    <p class="small mb-0" style="opacity: 0.5;">&copy; 2024 BIL</p>
+                    <p class="small mb-0" style="opacity: 0.5;">&copy; {% now "Y" %} BIL</p>
                 </div>
             </div>
         </div>

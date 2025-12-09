@@ -4,7 +4,8 @@
       "Bash(yarn build)",
       "WebFetch(domain:www.instagram.com)",
       "WebSearch",
-      "WebFetch(domain:www.innovatebrunei.com)"
+      "WebFetch(domain:www.innovatebrunei.com)",
+      "Bash(dir /s \"C:\\Users\\anipp\\Documents\\GitHub\\website_bil2\")"
     ],
     "deny": [],
     "ask": []
