@@ -5,7 +5,9 @@
       "WebFetch(domain:www.instagram.com)",
       "WebSearch",
       "WebFetch(domain:www.innovatebrunei.com)",
-      "Bash(dir /s \"C:\\Users\\anipp\\Documents\\GitHub\\website_bil2\")"
+      "Bash(dir /s \"C:\\Users\\anipp\\Documents\\GitHub\\website_bil2\")",
+      "WebFetch(domain:mycodelesswebsite.com)",
+      "WebFetch(domain:www.eleken.co)"
     ],
     "deny": [],
     "ask": []

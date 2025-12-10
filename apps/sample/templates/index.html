@@ -8,8 +8,12 @@
 {% block nav_home %}active{% endblock %}
 
 {% block hero %}
-<section class="hero-section" style="background: linear-gradient(rgba(22, 22, 22, 0.85), rgba(22, 22, 22, 0.9)), url('{% static 'img/carousel-1.jpg' %}') center/cover no-repeat;">
-  <div class="container">
+<section class="hero-section has-blobs" style="background: linear-gradient(rgba(22, 22, 22, 0.85), rgba(22, 22, 22, 0.9)), url('{% static 'img/carousel-1.jpg' %}') center/cover no-repeat;">
+  <!-- Decorative blobs -->
+  <div class="blob blob-teal-solid blob-xl blob-top-right blob-animate"></div>
+  <div class="blob blob-teal blob-md blob-animate-reverse" style="top: 40%; left: -50px;"></div>
+
+  <div class="container" style="position: relative; z-index: 2;">
     <div class="row min-vh-100 align-items-center">
       <div class="col-lg-8">
         <h1 class="hero-title">
@@ -31,8 +35,11 @@
 
 {% block content %}
 <!-- About -->
-<div class="container py-5">
-  <div class="row py-5 align-items-center">
+<div class="container py-5 has-blobs">
+  <!-- Decorative blob -->
+  <div class="blob blob-teal blob-md blob-animate-slow blob-hide-mobile" style="top: 20%; right: 5%;"></div>
+
+  <div class="row py-5 align-items-center" style="position: relative; z-index: 2;">
     <div class="col-lg-6 mb-5 mb-lg-0 animate slide-left">
       <div class="img-overlay" style="height: 350px">
         <img src="{% static 'img/carousel-1.jpg' %}" alt="Collaboration at BIL" class="img-fluid" loading="lazy" />
@@ -59,8 +66,12 @@
 </div>
 
 <!-- What We Do -->
-<div class="section-dark">
-  <div class="container py-5">
+<div class="section-dark has-blobs">
+  <!-- Decorative blobs -->
+  <div class="blob blob-teal blob-lg blob-animate" style="top: -100px; right: 10%;"></div>
+  <div class="blob blob-teal-solid blob-sm blob-animate-reverse blob-hide-mobile" style="bottom: 50px; left: 5%;"></div>
+
+  <div class="container py-5" style="position: relative; z-index: 2;">
     <div class="row py-5">
       <div class="col-12 mb-5 animate fade-up">
         <h2>What we actually do</h2>
@@ -108,8 +119,11 @@
 </div>
 
 <!-- Partners -->
-<div class="section-dark">
-  <div class="container py-5">
+<div class="section-dark has-blobs">
+  <!-- Decorative blob -->
+  <div class="blob blob-teal-solid blob-md blob-animate-slow" style="top: 50%; right: -80px;"></div>
+
+  <div class="container py-5" style="position: relative; z-index: 2;">
     <div class="row py-5 align-items-center">
       <div class="col-12 mb-4 animate fade-in">
         <p class="small text-muted mb-0">Made possible by</p>
@@ -131,8 +145,12 @@
 </div>
 
 <!-- CTA -->
-<div class="container py-5">
-  <div class="row py-5">
+<div class="container py-5 has-blobs">
+  <!-- Decorative blobs -->
+  <div class="blob blob-teal-solid blob-lg blob-animate blob-hide-mobile" style="top: -50px; right: 10%;"></div>
+  <div class="blob blob-teal blob-sm blob-animate-reverse" style="bottom: 20%; left: 0;"></div>
+
+  <div class="row py-5" style="position: relative; z-index: 2;">
     <div class="col-lg-8 animate fade-up">
       <h2 class="mb-3">Got an idea?</h2>
       <p class="mb-4">
