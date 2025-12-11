@@ -8,9 +8,13 @@
 {% block nav_partners %}active{% endblock %}
 
 {% block hero %}
-<div class="page-header">
-    <div class="container text-center">
-        <h1>Our Partners</h1>
+<div class="page-header has-blobs">
+    <!-- Decorative blobs -->
+    <div class="blob blob-teal-solid blob-lg blob-animate" style="top: -100px; right: 10%;"></div>
+    <div class="blob blob-teal blob-md blob-animate-slow blob-hide-mobile" style="bottom: -30px; left: 5%;"></div>
+
+    <div class="container text-center" style="position: relative; z-index: 2;">
+        <h1><span class="display-playful">Our Partners</span></h1>
         <p class="mt-3">The people who make this happen</p>
     </div>
 </div>
@@ -21,32 +25,32 @@
 <div class="container py-5">
     <div class="row py-5">
         <div class="col-12 mb-5 animate fade-up">
-            <h2>The founding four</h2>
+            <h2 class="heading-underline">The founding four</h2>
             <p>These organizations came together in 2013 to create BIL.</p>
         </div>
         <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-1">
-            <div class="card-dark text-center h-100 p-4">
+            <div class="card-dark card-rounded text-center h-100 p-4 hover-pop">
                 <img src="{% static 'img/shell.png' %}" alt="BSP" class="partner-logo mb-3" style="height: 60px;">
                 <h5>BSP</h5>
                 <p class="small">Brunei Shell Petroleum</p>
             </div>
         </div>
         <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-2">
-            <div class="card-dark text-center h-100 p-4">
+            <div class="card-dark card-rounded text-center h-100 p-4 hover-pop">
                 <img src="{% static 'img/dare.png' %}" alt="DARe" class="partner-logo mb-3" style="height: 60px;">
                 <h5>DARe</h5>
                 <p class="small">Darussalam Enterprise</p>
             </div>
         </div>
         <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-3">
-            <div class="card-dark text-center h-100 p-4">
+            <div class="card-dark card-rounded text-center h-100 p-4 hover-pop">
                 <img src="{% static 'img/DST.png' %}" alt="DST" class="partner-logo mb-3" style="height: 60px;">
                 <h5>DST</h5>
                 <p class="small">Datastream Digital</p>
             </div>
         </div>
         <div class="col-md-6 col-lg-3 mb-4 animate fade-up delay-4">
-            <div class="card-dark text-center h-100 p-4">
+            <div class="card-dark card-rounded text-center h-100 p-4 hover-pop">
                 <img src="{% static 'img/livewire.png' %}" alt="LiveWIRE" class="partner-logo mb-3" style="height: 60px;">
                 <h5>Shell LiveWIRE</h5>
                 <p class="small">Youth entrepreneurship program</p>
@@ -60,11 +64,11 @@
     <div class="container py-5">
         <div class="row py-5">
             <div class="col-12 mb-5 animate fade-up">
-                <h2>Who we work with</h2>
+                <h2 class="heading-underline">Who we work with</h2>
                 <p>We collaborate with all kinds of organizations.</p>
             </div>
             <div class="col-md-4 mb-4 animate fade-up delay-1">
-                <div class="card-dark h-100">
+                <div class="card-dark card-rounded h-100 card-tilt-slight-left hover-pop">
                     <h5 class="text-teal">Companies</h5>
                     <p class="small mb-0">
                         From telcos to banks to oil & gas - businesses that want to
@@ -73,7 +77,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4 animate fade-up delay-2">
-                <div class="card-dark h-100">
+                <div class="card-dark card-rounded h-100 hover-pop">
                     <h5 class="text-teal">Government</h5>
                     <p class="small mb-0">
                         Various ministries and agencies that share our goal
@@ -82,7 +86,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4 animate fade-up delay-3">
-                <div class="card-dark h-100">
+                <div class="card-dark card-rounded h-100 card-tilt-slight-right hover-pop">
                     <h5 class="text-teal">Universities</h5>
                     <p class="small mb-0">
                         UBD, UTB, Politeknik - we work with students and
@@ -98,7 +102,7 @@
 <div class="container py-5">
     <div class="row py-5">
         <div class="col-lg-8 animate fade-up">
-            <h2 class="mb-3">Want to partner with us?</h2>
+            <h2 class="mb-3"><span class="display-playful">Want to partner with us?</span></h2>
             <p class="mb-4">
                 We're always open to new collaborations. If you want to support
                 innovation in Brunei, let's talk.

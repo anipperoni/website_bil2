@@ -1,5 +1,8 @@
 /********** BIL - Brunei Innovation Lab **********/
 
+/* Playful handwritten font for friendly feel */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap');
+
 :root {
   /* Brand colors from innovatebrunei.com */
   --teal: #70e3e6;
@@ -11,12 +14,17 @@
   --gray: #c2c2c2;
   --gray-dark: #6b6b6b;
 
+  /* Warm accent for friendly feel */
+  --coral: #FF6B6B;
+  --yellow: #FFD93D;
+
   /* Bootstrap compatibility */
   --primary: #70e3e6;
   --secondary: #007373;
 
   /* Typography */
   --font-main: 'Inter', -apple-system, sans-serif;
+  --font-playful: 'Caveat', cursive;
 
   /* Spacing */
   --radius: 12px;
@@ -643,6 +651,48 @@ footer a:hover {
   overflow: hidden;
 }
 
+/* Animated Rectangular Blob - rounded rectangle that morphs */
+.img-overlay-rect {
+  position: relative;
+  overflow: hidden;
+  animation: rect-blob-morph 8s ease-in-out infinite;
+}
+
+@keyframes rect-blob-morph {
+  0%, 100% {
+    border-radius: 20px 60px 20px 60px;
+  }
+  25% {
+    border-radius: 60px 20px 60px 20px;
+  }
+  50% {
+    border-radius: 30px 50px 40px 50px;
+  }
+  75% {
+    border-radius: 50px 30px 50px 40px;
+  }
+}
+
+.img-overlay-rect::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(22, 22, 22, 0.4) 0%, rgba(112, 227, 230, 0.1) 100%);
+  pointer-events: none;
+  animation: rect-blob-morph 8s ease-in-out infinite;
+}
+
+.img-overlay-rect img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.img-overlay-rect:hover img {
+  transform: scale(1.05);
+}
+
 .img-overlay::after {
   content: '';
   position: absolute;
@@ -932,5 +982,249 @@ footer a:hover {
 
   .img-overlay {
     border-radius: 30% 70% 60% 40% / 60% 30% 70% 40%;
+  }
+}
+
+/* ========================================
+   PLAYFUL DESIGN ELEMENTS
+   Making the site feel friendly & human
+   ======================================== */
+
+/* Playful Display Font */
+.display-playful {
+  font-family: var(--font-playful);
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.text-playful {
+  font-family: var(--font-playful);
+  font-weight: 500;
+}
+
+/* Warm accent color utilities */
+.text-coral {
+  color: var(--coral) !important;
+}
+
+.text-yellow {
+  color: var(--yellow) !important;
+}
+
+/* Tilted Cards - Creates playful asymmetric feel */
+.card-tilt-left {
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+}
+
+.card-tilt-right {
+  transform: rotate(2deg);
+  transition: transform 0.3s ease;
+}
+
+.card-tilt-slight-left {
+  transform: rotate(-1deg);
+  transition: transform 0.3s ease;
+}
+
+.card-tilt-slight-right {
+  transform: rotate(1deg);
+  transition: transform 0.3s ease;
+}
+
+.card-tilt-left:hover,
+.card-tilt-right:hover,
+.card-tilt-slight-left:hover,
+.card-tilt-slight-right:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+/* Playful Animations */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.hover-wiggle:hover {
+  animation: wiggle 0.4s ease;
+}
+
+.hover-bounce:hover {
+  animation: bounce 0.4s ease;
+}
+
+.hover-pop:hover {
+  animation: pop 0.3s ease;
+}
+
+/* Highlighter Effect for Headings */
+.heading-underline {
+  background: linear-gradient(180deg, transparent 50%, rgba(112, 227, 230, 0.35) 50%);
+  padding: 0 4px;
+  display: inline;
+}
+
+.heading-underline-coral {
+  background: linear-gradient(180deg, transparent 50%, rgba(255, 107, 107, 0.35) 50%);
+}
+
+/* Squiggly Circle Highlight */
+.highlight-circle {
+  position: relative;
+}
+
+.highlight-circle::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  right: -15px;
+  bottom: -10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 50'%3E%3Cellipse cx='50' cy='25' rx='48' ry='23' stroke='%2370e3e6' stroke-width='2' fill='none' stroke-dasharray='4 2'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* Doodle Icons - Inline SVG classes */
+.doodle {
+  display: inline-block;
+  position: relative;
+}
+
+.doodle-star::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2370e3e6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z'/%3E%3C/svg%3E");
+  background-size: contain;
+  animation: pop 2s ease-in-out infinite;
+}
+
+.doodle-arrow {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 20' fill='none' stroke='%2370e3e6' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M5 10 Q 15 5, 25 10 T 45 10'/%3E%3Cpath d='M38 5 L 45 10 L 38 15'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.doodle-lightbulb {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FFD93D' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M9 21h6M12 3a6 6 0 0 0-4 10.5V17h8v-3.5A6 6 0 0 0 12 3z'/%3E%3Cpath d='M9 17v1a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.doodle-rocket {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FF6B6B' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.8-.1 2.6-.3'/%3E%3Cpath d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+/* Floating doodle animation */
+.floating-doodle {
+  animation: doodle-float 4s ease-in-out infinite;
+}
+
+@keyframes doodle-float {
+  0%, 100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+/* Hero Lightbulb Animation */
+.hero-lightbulb {
+  max-width: 280px;
+  opacity: 0.9;
+  animation: lightbulb-float 4s ease-in-out infinite;
+  filter: drop-shadow(0 20px 40px rgba(112, 227, 230, 0.3));
+}
+
+@keyframes lightbulb-float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.02);
+  }
+}
+
+/* Playful Button Styles */
+.btn-playful {
+  position: relative;
+  overflow: visible;
+}
+
+.btn-playful:hover {
+  animation: wiggle 0.4s ease;
+}
+
+.btn-primary:hover {
+  animation: bounce 0.3s ease;
+}
+
+/* Scrapbook-style decorative elements */
+.scrapbook-tape {
+  position: relative;
+}
+
+.scrapbook-tape::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 80px;
+  height: 25px;
+  background: rgba(112, 227, 230, 0.3);
+  border-radius: 2px;
+}
+
+/* Floating decorative elements */
+.float-decoration {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Responsive adjustments for playful elements */
+@media (max-width: 767.98px) {
+  .card-tilt-left,
+  .card-tilt-right {
+    transform: rotate(0deg);
+  }
+
+  .card-tilt-left:hover,
+  .card-tilt-right:hover {
+    transform: scale(1.02);
+  }
+
+  .display-playful {
+    font-size: 1.2em;
   }
 }

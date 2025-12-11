@@ -8,9 +8,13 @@
 {% block nav_programs %}active{% endblock %}
 
 {% block hero %}
-<div class="page-header">
-    <div class="container text-center">
-        <h1>Programs</h1>
+<div class="page-header has-blobs">
+    <!-- Decorative blobs -->
+    <div class="blob blob-teal-solid blob-lg blob-animate" style="top: -100px; right: 10%;"></div>
+    <div class="blob blob-teal blob-md blob-animate-slow blob-hide-mobile" style="bottom: -30px; left: 5%;"></div>
+
+    <div class="container text-center" style="position: relative; z-index: 2;">
+        <h1><span class="display-playful">Programs</span></h1>
         <p class="mt-3">Ways we can help you</p>
     </div>
 </div>
@@ -22,7 +26,7 @@
     <div class="row py-5 align-items-center">
         <div class="col-lg-6 mb-5 mb-lg-0 animate slide-left">
             <span class="text-teal small mb-2 d-block">12-WEEK PROGRAM</span>
-            <h2 class="mb-4">The Accelerator</h2>
+            <h2 class="mb-4 heading-underline">The Accelerator</h2>
             <p class="mb-4">
                 Got a startup idea that you're serious about? This is for you.
                 12 weeks of real talk, mentorship from people who've done it,
@@ -34,7 +38,7 @@
             <a href="{% url 'quote' %}" class="btn btn-primary">Apply</a>
         </div>
         <div class="col-lg-5 offset-lg-1 animate slide-right">
-            <div class="img-overlay" style="height: 350px;">
+            <div class="img-overlay-rect" style="height: 350px;">
                 <img src="{% static 'img/feature.jpg' %}" alt="Accelerator Program" class="img-fluid">
             </div>
         </div>
@@ -46,13 +50,13 @@
     <div class="container py-5">
         <div class="row py-5 align-items-center">
             <div class="col-lg-5 mb-5 mb-lg-0 animate slide-left">
-                <div class="img-overlay" style="height: 300px;">
+                <div class="img-overlay-rect" style="height: 300px;">
                     <img src="{% static 'img/carousel-1.jpg' %}" alt="Startup673 Hackathon" class="img-fluid">
                 </div>
             </div>
             <div class="col-lg-6 offset-lg-1 animate slide-right">
                 <span class="text-teal small mb-2 d-block">48-HOUR HACKATHON</span>
-                <h2 class="mb-4">Startup673</h2>
+                <h2 class="mb-4 heading-underline">Startup673</h2>
                 <p class="mb-4">
                     Brunei's national hackathon. 48 hours to go from idea to prototype.
                     You don't need to be a coder - just someone who wants to build something cool.
@@ -72,7 +76,7 @@
     <div class="row py-5 align-items-center">
         <div class="col-lg-6 mb-5 mb-lg-0 animate slide-left">
             <span class="text-teal small mb-2 d-block">FREE & OPEN</span>
-            <h2 class="mb-4">Workshops</h2>
+            <h2 class="mb-4 heading-underline">Workshops</h2>
             <p class="mb-4">
                 Free sessions on actually useful stuff. Coding, pitching, design,
                 business basics - we run them regularly and they're open to everyone.
@@ -83,7 +87,7 @@
             <a href="{% url 'events' %}" class="btn btn-outline-light">See upcoming workshops</a>
         </div>
         <div class="col-lg-5 offset-lg-1 animate slide-right">
-            <div class="img-overlay" style="height: 300px;">
+            <div class="img-overlay-rect" style="height: 300px;">
                 <img src="{% static 'img/carousel-2.jpg' %}" alt="Workshop" class="img-fluid">
             </div>
         </div>
@@ -95,23 +99,23 @@
     <div class="container py-5">
         <div class="row py-5">
             <div class="col-12 mb-5 animate fade-up">
-                <h2>Other ways we help</h2>
+                <h2 class="heading-underline">Other ways we help</h2>
             </div>
             <div class="col-md-4 mb-4 animate fade-up delay-1">
-                <div class="card-dark h-100">
-                    <h4 class="text-teal mb-3">Mentorship</h4>
+                <div class="card-dark card-rounded h-100 card-tilt-slight-left hover-pop">
+                    <h4 class="text-teal mb-3"><span class="doodle-lightbulb me-2"></span>Mentorship</h4>
                     <p class="small">Connect with experienced founders and industry folks who can give you real advice.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4 animate fade-up delay-2">
-                <div class="card-dark h-100">
+                <div class="card-dark card-rounded h-100 hover-pop">
                     <h4 class="text-teal mb-3">Coworking space</h4>
                     <p class="small">Need a place to work? Come use our space at kHUB. Good wifi, good coffee.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4 animate fade-up delay-3">
-                <div class="card-dark h-100">
-                    <h4 class="text-teal mb-3">Connections</h4>
+                <div class="card-dark card-rounded h-100 card-tilt-slight-right hover-pop">
+                    <h4 class="text-teal mb-3"><span class="doodle-rocket me-2"></span>Connections</h4>
                     <p class="small">We know people. Investors, partners, customers - we can help you meet the right ones.</p>
                 </div>
             </div>
@@ -123,7 +127,7 @@
 <div class="container py-5">
     <div class="row py-5">
         <div class="col-lg-8 animate fade-up">
-            <h2 class="mb-3">Not sure where to start?</h2>
+            <h2 class="mb-3"><span class="display-playful">Not sure where to start?</span></h2>
             <p class="mb-4">
                 That's totally fine. Just reach out and we'll figure it out together.
             </p>

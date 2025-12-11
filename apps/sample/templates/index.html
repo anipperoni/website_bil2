@@ -1,24 +1,26 @@
 {% extends 'base_sample.html' %}
 {% load static %}
-
 {% block title %}Brunei Innovation Lab{% endblock title %}
-
-{% block meta_description %}Brunei Innovation Lab - Where startups are born. Accelerator programs, hackathons, and workshops for builders and dreamers.{% endblock %}
-
-{% block nav_home %}active{% endblock %}
-
+{% block meta_description %}Brunei Innovation Lab - Where startups are born. Accelerator programs, hackathons, and workshops for builders and dreamers.{% endblock meta_description %}
+{% block nav_home %}active{% endblock nav_home %}
 {% block hero %}
-<section class="hero-section has-blobs" style="background: linear-gradient(rgba(22, 22, 22, 0.85), rgba(22, 22, 22, 0.9)), url('{% static 'img/carousel-1.jpg' %}') center/cover no-repeat;">
+<section
+  class="hero-section has-blobs"
+  style="
+    background: linear-gradient(rgba(22, 22, 22, 0.85), rgba(22, 22, 22, 0.9)),
+      url('{% static 'img/carousel-1.jpg' %}') center/cover no-repeat;
+  "
+>
   <!-- Decorative blobs -->
   <div class="blob blob-teal-solid blob-xl blob-top-right blob-animate"></div>
-  <div class="blob blob-teal blob-md blob-animate-reverse" style="top: 40%; left: -50px;"></div>
+  <div class="blob blob-teal blob-md blob-animate-reverse" style="top: 40%; left: -50px"></div>
 
-  <div class="container" style="position: relative; z-index: 2;">
+  <div class="container" style="position: relative; z-index: 2">
     <div class="row min-vh-100 align-items-center">
-      <div class="col-lg-8">
+      <div class="col-lg-6">
         <h1 class="hero-title">
           Where Brunei<br />
-          <span class="highlight">Builds the Future</span>
+          <span class="highlight display-playful">Builds the Future</span>
         </h1>
         <p class="hero-subtitle">
           Got an idea? We'll help you build it. Join a community of makers, dreamers, and doers.
@@ -28,28 +30,29 @@
           <a href="{% url 'about' %}" class="btn btn-outline-light">Learn More</a>
         </div>
       </div>
+      <div class="col-lg-6 d-none d-lg-flex justify-content-center">
+        <img src="{% static 'img/lightbulb.png' %}" alt="Innovation lightbulb" class="hero-lightbulb">
+      </div>
     </div>
   </div>
 </section>
-{% endblock hero %}
-
-{% block content %}
+{% endblock hero %} {% block content %}
 <!-- About -->
 <div class="container py-5 has-blobs">
   <!-- Decorative blob -->
-  <div class="blob blob-teal blob-md blob-animate-slow blob-hide-mobile" style="top: 20%; right: 5%;"></div>
+  <div class="blob blob-teal blob-md blob-animate-slow blob-hide-mobile" style="top: 20%; right: 5%"></div>
 
-  <div class="row py-5 align-items-center" style="position: relative; z-index: 2;">
+  <div class="row py-5 align-items-center" style="position: relative; z-index: 2">
     <div class="col-lg-6 mb-5 mb-lg-0 animate slide-left">
       <div class="img-overlay" style="height: 350px">
         <img src="{% static 'img/carousel-1.jpg' %}" alt="Collaboration at BIL" class="img-fluid" loading="lazy" />
       </div>
     </div>
     <div class="col-lg-5 offset-lg-1 animate slide-right">
-      <h2 class="mb-4">We're here to help you build</h2>
+      <h2 class="mb-4 heading-underline">We're here to help you build</h2>
       <p class="mb-4">
-        Whether you're starting a company, learning to code, or just have a wild idea -
-        this is your space. No fancy jargon, just real support from people who get it.
+        Whether you're starting a company, learning to code, or just have a wild idea - this is your space. No fancy
+        jargon, just real support from people who get it.
       </p>
       <div class="row">
         <div class="col-6">
@@ -68,24 +71,26 @@
 <!-- What We Do -->
 <div class="section-dark has-blobs">
   <!-- Decorative blobs -->
-  <div class="blob blob-teal blob-lg blob-animate" style="top: -100px; right: 10%;"></div>
-  <div class="blob blob-teal-solid blob-sm blob-animate-reverse blob-hide-mobile" style="bottom: 50px; left: 5%;"></div>
+  <div class="blob blob-teal blob-lg blob-animate" style="top: -100px; right: 10%"></div>
+  <div class="blob blob-teal-solid blob-sm blob-animate-reverse blob-hide-mobile" style="bottom: 50px; left: 5%"></div>
 
-  <div class="container py-5" style="position: relative; z-index: 2;">
+  <div class="container py-5" style="position: relative; z-index: 2">
     <div class="row py-5">
       <div class="col-12 mb-5 animate fade-up">
-        <h2>What we actually do</h2>
+        <h2 class="heading-underline">What we actually do</h2>
       </div>
       <div class="col-md-4 mb-4 animate fade-up delay-1">
-        <h4 class="text-teal mb-2">Show & Tell</h4>
+        <h4 class="text-teal mb-2"><span class="doodle-lightbulb me-2"></span>Show & Tell</h4>
         <p class="small">Cool tech demos, product showcases, and a chance to see what others are building.</p>
       </div>
       <div class="col-md-4 mb-4 animate fade-up delay-2">
-        <h4 class="text-teal mb-2">Startup Support</h4>
-        <p class="small">Accelerator programs, mentorship, and all the help you need to get your idea off the ground.</p>
+        <h4 class="text-teal mb-2"><span class="doodle-rocket me-2"></span>Startup Support</h4>
+        <p class="small">
+          Accelerator programs, mentorship, and all the help you need to get your idea off the ground.
+        </p>
       </div>
       <div class="col-md-4 mb-4 animate fade-up delay-3">
-        <h4 class="text-teal mb-2">Learn Stuff</h4>
+        <h4 class="text-teal mb-2"><span class="doodle-lightbulb me-2"></span>Learn Stuff</h4>
         <p class="small">
           Workshops, bootcamps, and training sessions. From coding to pitching - we've got you covered.
         </p>
@@ -103,14 +108,13 @@
     <div class="col-md-6 mb-4 animate fade-up delay-1">
       <h4 class="mb-2">Startup673 Hackathon</h4>
       <p class="small">
-        48 hours to build something from scratch. Find a team, pick a problem, make something real. It's intense but fun.
+        48 hours to build something from scratch. Find a team, pick a problem, make something real. It's intense but
+        fun.
       </p>
     </div>
     <div class="col-md-6 mb-4 animate fade-up delay-2">
       <h4 class="mb-2">Startup Summit</h4>
-      <p class="small">
-        Our annual event where the whole ecosystem comes together. Talks, networking, and good vibes.
-      </p>
+      <p class="small">Our annual event where the whole ecosystem comes together. Talks, networking, and good vibes.</p>
     </div>
     <div class="col-12 mt-3 animate fade-up delay-3">
       <a href="{% url 'programs' %}" class="btn btn-outline-light">See what else we're up to</a>
@@ -121,9 +125,9 @@
 <!-- Partners -->
 <div class="section-dark has-blobs">
   <!-- Decorative blob -->
-  <div class="blob blob-teal-solid blob-md blob-animate-slow" style="top: 50%; right: -80px;"></div>
+  <div class="blob blob-teal-solid blob-md blob-animate-slow" style="top: 50%; right: -80px"></div>
 
-  <div class="container py-5" style="position: relative; z-index: 2;">
+  <div class="container py-5" style="position: relative; z-index: 2">
     <div class="row py-5 align-items-center">
       <div class="col-12 mb-4 animate fade-in">
         <p class="small text-muted mb-0">Made possible by</p>
@@ -147,10 +151,10 @@
 <!-- CTA -->
 <div class="container py-5 has-blobs">
   <!-- Decorative blobs -->
-  <div class="blob blob-teal-solid blob-lg blob-animate blob-hide-mobile" style="top: -50px; right: 10%;"></div>
-  <div class="blob blob-teal blob-sm blob-animate-reverse" style="bottom: 20%; left: 0;"></div>
+  <div class="blob blob-teal-solid blob-lg blob-animate blob-hide-mobile" style="top: -50px; right: 10%"></div>
+  <div class="blob blob-teal blob-sm blob-animate-reverse" style="bottom: 20%; left: 0"></div>
 
-  <div class="row py-5" style="position: relative; z-index: 2;">
+  <div class="row py-5" style="position: relative; z-index: 2">
     <div class="col-lg-8 animate fade-up">
       <h2 class="mb-3">Got an idea?</h2>
       <p class="mb-4">
