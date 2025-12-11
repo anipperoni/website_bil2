@@ -30,8 +30,10 @@
           <a href="{% url 'about' %}" class="btn btn-outline-light">Learn More</a>
         </div>
       </div>
-      <div class="col-lg-6 d-none d-lg-flex justify-content-center">
-        <img src="{% static 'img/lightbulb.png' %}" alt="Innovation lightbulb" class="hero-lightbulb">
+      <div class="col-lg-6 d-none d-lg-flex justify-content-center align-items-center">
+        <div class="img-overlay-rect hero-rect-animate" style="height: 350px; width: 100%; max-width: 400px;">
+          <img src="{% static 'img/lightbulb.png' %}" alt="Innovation lightbulb" class="img-fluid" style="object-fit: contain; padding: 40px;">
+        </div>
       </div>
     </div>
   </div>
